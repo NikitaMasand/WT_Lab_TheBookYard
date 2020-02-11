@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Store</title>
+  </head>
+  <body>
+
+    <div class = "header">
+      <div class="header--text">
+        The Book Yard
+      </div>
+      <div class="header--subheading">What goes into the mind comes out in life</div>
+    </div>
+    <br/>
+    <br/>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="homeLoggedIn.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="store.html">Store</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html">Shopping Cart</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">UserProfile</a>
+            </li>
+        
+            &emsp;
+            &emsp;
+            &emsp;
+            &emsp;
+            &emsp; 
+            &emsp;
+            &emsp;
+            &emsp;
+            &emsp;
+            &emsp;  
+            &emsp;
+            &emsp;
+            &emsp;
+            &emsp;
+            &emsp; 
+            &emsp;
+            &emsp;
+            &emsp;
+            &emsp;
+            &emsp;  
+            &emsp;
+            &emsp;
+            &emsp;
+            &emsp;
+            &emsp; 
+            &emsp;
+            &emsp;
+            &emsp;
+            &emsp;
+            &emsp;  
+            &emsp;
+            &emsp;
+            &emsp;
+            &emsp;
+            &emsp; 
+            &emsp;
+            &emsp; 
+            &emsp;
+
+            <li>
+                <a href="homeLoggedOut.html">
+                    <button type="button" class="btn btn-outline-secondary">Log out</button>
+                  </a>              
+                </li>
+          </ul>
+        </div>
+      </nav>
+        
+    <br/>
+<img src="images/fiction/fiction.jpg" width="300px" height="200px" align="left">
+<img src="images/nonfiction/nonfiction.jpg" width="300px" height="200px" align="right">
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+        <div class = "header_1">
+        <div class="header--text">
+          Choose your favourite category!!
+        </div>
+      </div>
+        </div>
+        <div class="flip-card-back">
+          <div class="header--text">fiction</div>
+          <a href="fantasy.html">fantasy</a> <br/>
+          <a href="mythology.html">mythology</a>
+          <div class="header--text">non-fiction</div>
+          <a href="productivity.html">productivity</a>
+        </div>
+      </div>
+    </div>
+
+    <br/>
+    <div class = "header_1">
+      <div class="header--text">
+        or let's just have a random walk in the garden....
+      </div>
+      <div class="header--subheading">we hope you will like some flowers in here</div>
+    </div>
+
+    <br/>
+    <br/>
+    <div class = "row">
+
+      <div class = "col-md-3">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/fiction/fantasy/1.jpg" alt="Card image cap">
+              <div class="card-body">
+                  <p class="card-title">
+                    <span class="card--text">Harry Potter and the Sorcerers stone</span>
+                    <span class="card--price">Rs. 300</span>
+                  </p>
+                  <a href="{% url 'shoppingcart' pk=product.pk %}"
+                  class="btn btn-primary">
+                  Add to Cart</a>
+              </div>
+         </div>
+      </div>
+      
+      <div class = "col-md-3">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/nonfiction/productivity/5.jpg" alt="Card image cap">
+              <div class="card-body">
+                  <p class="card-title">
+                    <span class="card--text">Insane Energy for Lazy people</span>
+                    <span class="card--price">Rs. 250</span>
+                  </p>
+                  <a href="{% url 'shoppingcart' pk=product.pk %}"
+                  class="btn btn-primary">
+                  Add to Cart</a>
+              </div>
+         </div>
+      </div>
+  
+      <div class = "col-md-3">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/fiction/mythology/1.jpg" alt="Card image cap">
+              <div class="card-body">
+                  <p class="card-title">
+                    <span class="card--text">Vanara</span>
+                    <span class="card--price">Rs. 300</span>
+                  </p>
+                  <a href="{% url 'shoppingcart' pk=product.pk %}"
+                  class="btn btn-primary">
+                  Add to Cart</a>
+              </div>
+         </div>
+      </div>
+  
+      <div class = "col-md-3">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/nonfiction/productivity/6.jpg" alt="Card image cap">
+              <div class="card-body">
+                  <p class="card-title">
+                    <span class="card--text">The 5 AM Club</span>
+                    <span class="card--price">Rs. 400</span>
+                  </p>
+                  <a href="{% url 'shoppingcart' pk=product.pk %}"
+                  class="btn btn-primary">
+                  Add to Cart</a>
+              </div>
+         </div>
+      </div>
+  
+    </div>
+  
+    
+    <div class = "row">
+  
+      <div class = "col-md-3">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/fiction/mythology/5.jpg" alt="Card image cap">
+              <div class="card-body">
+                  <p class="card-title">
+                    <span class="card--text">The Immortals of Meluha</span>
+                    <span class="card--price">Rs. 250</span>
+                  </p>
+                  <a href="{% url 'shoppingcart' pk=product.pk %}"
+                  class="btn btn-primary">
+                  Add to Cart</a>
+              </div>
+         </div>
+      </div>
+  
+      <div class = "col-md-3">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/fiction/mythology/2.jpg" alt="Card image cap">
+              <div class="card-body">
+                  <p class="card-title">
+                    <span class="card--text">365 tales from Indian Mythology</span>
+                    <span class="card--price">Rs. 200</span>
+                  </p>
+                  <a href="{% url 'shoppingcart' pk=product.pk %}"
+                  class="btn btn-primary">
+                  Add to Cart</a>
+              </div>
+         </div>
+      </div>
+    
+      
+    
+    <div class = "col-md-3">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/fiction/mythology/4.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-title">
+                  <span class="card--text">JAYA</span>
+                  <span class="card--price">Rs. 200</span>
+                </p>
+                <a href="{% url 'shoppingcart' pk=product.pk %}"
+                class="btn btn-primary">
+                Add to Cart</a>
+            </div>
+       </div>
+    </div>
+    
+  
+    </div>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
